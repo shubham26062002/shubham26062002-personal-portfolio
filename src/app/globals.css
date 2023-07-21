@@ -2,26 +2,57 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Setting font sizes for different screen sizes. */
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  color-scheme: dark;
+  font-size: 14px;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 768px) {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    font-size: 16px;
   }
 }
 
+@media (min-width: 1024px) {
+  :root {
+    font-size: 18px;
+  }
+}
+
+/* Adjusting height of the html and body tags to 100% of the viewport. */
+html,
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  @apply h-full scroll-smooth bg-hero-image bg-fixed bg-no-repeat bg-center bg-cover;
+}
+
+@media (min-width: 1024px) {
+
+  html,
+  body {
+    background-size: contain;
+  }
+}
+
+/* Custom gradient text modifiers. */
+.text-green-gradient {
+  background: rgb(35, 137, 99);
+  background: -moz-linear-gradient(90deg, rgba(35, 137, 99, 1) 0%, rgba(56, 170, 118, 1) 40%, rgba(103, 201, 137, 1) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(35, 137, 99, 1) 0%, rgba(56, 170, 118, 1) 40%, rgba(103, 201, 137, 1) 100%);
+  background: linear-gradient(90deg, rgba(35, 137, 99, 1) 0%, rgba(56, 170, 118, 1) 40%, rgba(103, 201, 137, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#238963", endColorstr="#67c989", GradientType=1);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-pink-gradient {
+  background: rgb(149, 85, 94);
+  background: -moz-linear-gradient(90deg, rgba(149, 85, 94, 1) 0%, rgba(230, 145, 140, 1) 40%, rgba(211, 125, 124, 1) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(149, 85, 94, 1) 0%, rgba(230, 145, 140, 1) 40%, rgba(211, 125, 124, 1) 100%);
+  background: linear-gradient(90deg, rgba(149, 85, 94, 1) 0%, rgba(230, 145, 140, 1) 40%, rgba(211, 125, 124, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#95555e", endColorstr="#d37d7c", GradientType=1);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

@@ -7,11 +7,18 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      colors: {
+        'midnight-gray': '#121212',
+        'midnight-black': '#0b0b0b',
+        'sea-green': '#38aa76',
+        'coral-pink': '#d37d7c',
       },
+      fontFamily: {
+        gliker: ['var(--font-gliker)'],
+      },
+      backgroundImage: {
+        'hero-image': "url('/images/hero-image.png')",
+      }
     },
   },
   plugins: [],
