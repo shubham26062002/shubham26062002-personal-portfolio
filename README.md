@@ -1,34 +1,77 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# shubham26062002-Personal-Portfolio
 
-First, run the development server:
+![Screenshot 2023-07-22 115918](https://github.com/shubham26062002/shubham26062002-personal-portfolio/assets/120495166/93020861-e13b-4dc4-91f3-6b0f193942fe)
+
+## Welcome to my personal portfolio.
+
+Thank you for visiting my personal portfolio website repository! This repository houses the code and assets for my beautiful and engaging portfolio website. I designed this website to showcase my skills, projects, and experiences, and I'm excited to share it with you.
+
+### Tools Stack
+
+ - Next.js
+ - Supabase
+ - TailwindCSS
+ - TypeScript
+
+### Features
+
+- Intuitive Dark Design
+- Responsive Design
+- Optimized Fonts and Images
+- Contact Form Submission
+- Email Response
+
+### Installation Guide
+
+To setup the project in your local environment, follow these steps:
+
+- Clone the project
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+  git clone https://github.com/shubham26062002/shubham26062002-personal-portfolio.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Go to the project directory
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+  cd shubham26062002-personal-portfolio
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- Install dependencies
 
-## Learn More
+```bash
+  npm install
+```
 
-To learn more about Next.js, take a look at the following resources:
+- Setup .env file.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+`NEXT_PUBLIC_SUPABASE_PROJECT_URL`
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+`NEXT_PUBLIC_SUPABASE_PUBLIC_ANON_KEY`
 
-## Deploy on Vercel
+`NEXT_PUBLIC_SUPABASE_SERVICE_ROLE_SECRET_KEY`
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+`NEXT_PUBLIC_NODEMAILER_HOST`
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+`NEXT_PUBLIC_NODEMAILER_PORT`
+
+`NEXT_PUBLIC_NODEMAILER_NAME`
+
+`NEXT_PUBLIC_NODEMAILER_USER`
+
+`NEXT_PUBLIC_NODEMAILER_PASSWORD`
+
+- Start the server
+
+```bash
+  npm run dev
+```
+
+### Join the Community
+
+If you have any doubts or questions, I encourage you to join our Discord community!
+
+[Join Now](https://discord.gg/JE9xwDeK)
+
+### Thank you!
